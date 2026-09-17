@@ -1,0 +1,98 @@
+.webpage-layout {
+    display: flex;
+    /* width: 100px; */
+    overflow-y: hidden;
+    background-color: #2E5077;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* Trying to edit the profile picture display style*/
+.profile-image {
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*Changing how much space the sidebar and the actual content take up*/
+.sidebar {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-left: 10px;
+    width: 30%;
+    height: 100vh;
+    background-color: #2E5077;
+    padding: 15px;
+    border-radius: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    /* Adding a box shadow to the sidebar to give an effect of depth */
+    box-shadow: 5px 5px;
+}
+.content {
+    flex: 1;
+    padding-left: 50px;
+    /* width: 70%; */
+    height: 100vh;
+    /* This specifies that if the content overflows vertically, allow scrolling*/
+    overflow-y: auto;
+
+    /*Increaasing the size of the contnet on the right side of the screen*/
+    /* scale: 1.2; */
+
+    border-radius: 15px;
+    border-top-right-radius: 5px;
+    background-color: #D7E8BA;
+    margin-left: 10px;
+    box-shadow: 5px 5px;
+}
+
+.content h1 {
+    background-color: #611C35;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/*Naking the sections in the nav area stack vertically instead of side-by-side*/
+nav {
+    display: flex; /*Use the flex box*/
+    flex-direction: column; /*Specify the direction of the flex box*/
+    /* background-color: red; */
+    text-align: center;
+    border: 5px black;
+    width: 50%;
+}
+
+nav a{
+    background-color: #4DA1A9;
+    /* border: 2px solid #4DA1A9; */
+    text-decoration: none;
+    color: #FFA630;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-radius: 50px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+nav a:hover {
+    background-color: #FFA630;
+}
+
+/*This section is for the content area*/
+.gallery {
+    display: flex;
+    flex-direction: row;
+}
+.gallery img {
+    /* margin-top: 10px; */
+    margin: 10px;
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
