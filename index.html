@@ -3,11 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The head of the document is for things the webpage needs to refer to-->
+     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+<!--  -->
+    <div class="webpage-layout">
+        <!-- An aside for a section that is tangentially related to the main content-->
+        <aside class="sidebar">
 
-    <h1> This is a test title to see the updated site</h1>
+            <!-- Basic profile picture-->
+            <img src="img/tis100-sad.png.gif" alt="A Picture of Kyle" class="profile-image">
+            <h1> Kyle Guthrie</h1>
+
+            <!-- basic information to introduce myself-->
+            <p>
+                Hello, my name is Kyle, I'm a Computer Science student interested in data science, Machine Learning,
+                scientific computing, and art.
+            </p>
+
+            <!-- This is a navigation section to help the user quickly navigate to specific sections-->
+            <nav>
+                <a href="#about">About Me</a>
+                <a href="#computer-science">Computer Science</a>
+                <a href="projects">Projects</a> <!-- Not sure why this projects link isnt working-->
+                <a href="#art">Art</a>
+                <a href="#contact">Contact Me</a>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <section id="about">
+                <h1>Info about me</h1>
+            </section>
+<!-- Computer Science section-->
+            <section id="computer-science">
+
+                <h2>Areas of interest</h2>
+                <h3>Data Science and Machine Learning</h3>
+                <p>
+                    I'm interested in using data analysis and machine learning to find patterns in large and complex data sets, particularly in healthcare and biological applications
+                </p>
+
+                <h3>Scientific Computing</h3>
+                <p>
+                    I'm interested in using programming to model physical
+                    systems and create interactive scientific visualizations.
+                    I'm currently exploring graphics programming and physics
+                    simulation using C++.
+                </p>
+                <h3>Healtchare and Bioinformatics</h3>
+                <p>
+                    One of my primary interests is the intersection of computer
+                    science and healthcare, including bioinformatics, medical
+                    data analysis, and software that can improve patient care.
+                </p>
+
+                <h3>Languages and Technologies</h3>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C / C++</li>
+                <li>Go</li>
+                <li>Git / Linux</li>
+
+                <h3>What I'm Learning</h3>
+                <ul>
+                    <li>Web development with HTML, CSS, and JavaScript</li>
+                    <li>C++ for scientific computing and simulation</li>
+                    <li>Computer graphics</li>
+                    <li>Machine learning and feature selection</li>
+                </ul>
+                
+            </section>
+<!-- This section s about projecects I have made in and outside of classes-->
+            <section id="projects">
+                This is the section about projects I've made in computer science
+            </section>
+<!-- This section is about my personal art hobby-->
+            <section id="art">
+                <h2>Main Personal Hobby: Art</h2>
+                <p>Outside of computer science, my main hobby is digital illustration and character art</p>
+                <div class="gallery">
+
+                    <!-- Each image should have a card describing it-->
+                    <img src="img/1.png" alt="An image of a knight I drew." >
+                    <img src="img/2.jpg" alt="An image of some random guy idk">
+                    <img src="img/3.jpg" alt="A comic image of a robot.">
+                </div>
+            </section>
+<!-- This section is about personal contact info, maybe just fill it with filler-->
+            <section id="contact">
+                This is the section that would contain contact information
+            </section>
+        </main>
+    </div>
     
 </body>
 </html>
