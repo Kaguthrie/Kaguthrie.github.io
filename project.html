@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Importing Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- Using embedded CSS - using @media -->
+    <style>
+        body {
+            background-color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            background-color: antiquewhite;
+            padding: 10px;
+        }
+        .project-card {
+            background-color: whitesmoke;
+            border-radius: 15px;
+            padding: 5px;
+            box-shadow: 0px 8px 16px 2px rgba(0, 0, 0, 0.2);
+        }
+        img {
+            background-color: white;
+            object-fit: cover;
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding-bottom: 10px;
+        }
+
+        #profile-image {
+            
+            height: 100px;
+            object-fit: cover;
+            
+        }
+
+        #final-project-section {
+            margin-top: 20px;
+        }
+
+        /* Doing the @media specifications */
+
+        /* This is for small screens */
+        @media (max-width: 766px) {
+            /* Remove the icon */
+            #profile-image {
+                display: none;
+            }
+
+            .container {
+                background-color: skyblue;
+            }
+        }
+
+        /* This is for a medium screen */
+        @media (min-width: 768px) {
+
+            .container {
+                background-color:aquamarine;
+            }
+
+            .profile-section {
+                justify-content: center;
+            }
+
+        }
+
+        /* This is for a larger screen */
+        @media (min-width: 992px){
+            /* R */
+            .container {
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Creating the greater container -->
+     <div class="container">
+        <div class="profile-section">
+            <h1>
+                Kyle Guthrie
+            </h1>
+
+                <img src="img/Bridgewater_State_University_logo.jpg" alt="a profile image" id="profile-image">
+        </div>
+
+        <!-- Creating the greater row -->
+        <div class="row">
+            <!-- Creating each column to hold the information -->
+             <div class="col-12 col-lg-4">
+
+                <div class="project-card">
+                <h3>
+                    Machine Learning Classification of Breast Cancer Subtypes Using Gene Expression Data — ATP Summer Research Grant, 2026
+                </h3>
+                <p>
+                    Conducted an undergraduate research project investigating the use of machine learning to classify breast cancer molecular subtypes from gene-expression data. 
+                    I worked with microarray data obtained from the Gene Expression Omnibus (GEO), including GSE20685, and developed a preprocessing pipeline for mapping probes to genes, handling duplicate measurements, 
+                    integrating sample metadata, and preparing expression data for analysis. I explored dimensionality reduction and statistical feature-selection techniques such as PCA and ANOVA and investigated machine-learning approaches 
+                    for distinguishing breast cancer subtypes. The project required integrating concepts from computer science, statistics, machine learning, bioinformatics, and cancer biology.
+                </p>
+                </div>
+             </div>
+             <div class="col-12 col-lg-4">
+                <div class="project-card">
+                <h3> Patient-Provider Management Application - Java</h3>
+                <p>
+                    Developed a healthcare management application as part of a team project using Java, a graphical user interface, and database concepts. 
+                    The application was designed around separate patient, healthcare provider, and administrator roles and included functionality for managing appointments, prescriptions, medications, and patient information. 
+                    I served as a project lead and helped coordinate the application's architecture, features, and development.
+                </p>
+                </div>
+             </div>
+             <div class="col-12 col-lg-4">
+                <div class="project-card">
+                <h3>Opiod Overdose Data Analysis - Python</h3>
+                <p>
+                    Analyzed public-health data related to opioid overdoses using Python. The project involved processing and visualizing real-world datasets to investigate geographic and temporal patterns in overdose rates. 
+                    The project provided experience working with imperfect real-world data and applying computational analysis to a healthcare-related problem.
+                </p>
+                </div>
+             </div>
+        </div>
+
+        <div class="project-card" id="final-project-section">
+            <h1>Final Project Idea</h1>
+            <h2>A portfolio and resume hosting website</h2>
+            <p>A website for people to display their proffesional and creative portfolio and resume. Complete with accessible sections and the ability to display gifs and videos and links to other sites hosting the projects.</p>
+        </div>
+     </div>
+    
+    
+</body>
+</html>
